@@ -23,10 +23,10 @@ string literals. <br>
 7. ) (close parenthesis)
 8. = (equality)
 9. < (less than)
-10. \> (greater than)<br>
+10. \> (greater than)<br><br>
+List of Reserved Words: program, end, begin, writeln, if, integer, real,
+string, for, to, downto, else, var <br>
 <br>
-**List of Reserved Words:** *program, end, begin, writeln, if, integer, real,
-string, for, to, downto, else, var*
 
 
 <span style="font-size:1.5em">**<---Simple Programming Language Phase 1: Lexical Analyzer--->**</span>
