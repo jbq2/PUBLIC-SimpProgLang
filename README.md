@@ -6,7 +6,30 @@ This project has **3 parts**: <br>  </span>
 2) Parser <span style="color:red">(INCOMPLETE)</span>
 3) Interpreter <span style="color:red">(INCOMPLETE)</span>
 
-<span style="font-size:1.5em">**<---Simple Programming Language Phase1: Lexical Analyzer--->**</span>
+<span style="font-size:1.5em">**<---Rules of the Language--->**</span>
+<br>
+**Identifiers**: can start with a letter or underscore followed by letters, digits, or underscores <br>
+**Integer Constants**: 1 or more digits <br>
+**Real Constants**: 0 or more digits followed by a '.' followed by 1 or more digits <br>
+**String Literals**: characters enclosed in single quotes.  New line characters are not permitted in
+string literals. <br>
+**List of Operators**: <br>
+1. \+ (plus)
+2. \- (minus)
+3. \* (multiplication)
+4. \/ (division)
+5. := (assignment)
+6. ( (open parenthesis)
+7. ) (close parenthesis)
+8. = (equality)
+9. < (less than)
+10. \> (greater than)<br>
+<br>
+**List of Reserved Words:** *program, end, begin, writeln, if, integer, real,
+string, for, to, downto, else, var*
+
+
+<span style="font-size:1.5em">**<---Simple Programming Language Phase 1: Lexical Analyzer--->**</span>
 
 **<span style="font-size:1.15em">
 This project has 3 parts, the first of which being the lexical analyzer. <br>
