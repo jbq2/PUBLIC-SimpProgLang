@@ -88,7 +88,7 @@ analyzer portion of this project consists of three main files:
 # Simple Programming Language Phase 2
 
 1) Lexical Analyzer <span style="color:green">**(COMPLETE)**</span>
-2) Parser <span style="color:green">**(INCOMPLETE)**</span>
+2) Parser <span style="color:green">**(COMPLETE)**</span>
 3) Interpreter <span style="color:red">(INCOMPLETE)</span>
 
 <span style="font-size:1.5em">**<---Parser--->**</span>
@@ -118,3 +118,27 @@ is the grammar used for this programming language:
 15. Factor ::= IDENT | ICONST | RCONST | SCONST | (Expr)
 
 The above grammar uses EBNF.
+
+# Simple Programming Language Phase 3
+
+1) Lexical Analyzer <span style="color:green">**(COMPLETE)**</span>
+2) Parser <span style="color:green">**(COMPLETE)**</span>
+3) Interpreter <span style="color:green">**(COMPLETE)**</span>
+
+<span style="font-size:1.5em">**<---Interpreter--->**</span>
+<br><br>
+
+This simple programming language is interpreted.  The implementation for the interpreter is built
+into the implementation of the parser from the last phase of this project.  parse.cpp and parse.h 
+have been renamed to parseInt.cpp and parseInt.h, respectively.
+<br><br>
+
+The major changes in this phase occur in terminal functions.  For example, when the recursive descent
+parser reaches Factor, the value of the factor is processed and saved in a map.  There are a few maps to
+save existing variables, their values, and types.
+
+Another major change is the implementation of Value objects (val.h and val.cpp).  Values can hold four types
+of values: integers, strings, floats, and booleans.  They hold the type and value of objects that are to be 
+processed by the interpreter.  These values also have overloaded operators to allow for operations between them.
+For example, adding a Value to a Value is possible using the + operator, but only if the two values
+are compatible (you can add 2 integer Values, but you cannot add an integer Value to a string Value).

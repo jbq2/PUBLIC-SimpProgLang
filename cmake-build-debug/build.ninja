@@ -49,20 +49,26 @@ cmake_ninja_workdir = C$:/Users/joshq/CLionProjects/PA1_Public/cmake-build-debug
 
 build cmake_object_order_depends_target_PA1_Public: phony || CMakeFiles/PA1_Public.dir
 
+build CMakeFiles/PA1_Public.dir/main.cpp.obj: CXX_COMPILER__PA1_Public_Debug C$:/Users/joshq/CLionProjects/PA1_Public/main.cpp || cmake_object_order_depends_target_PA1_Public
+  DEP_FILE = CMakeFiles\PA1_Public.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\PA1_Public.dir
+  OBJECT_FILE_DIR = CMakeFiles\PA1_Public.dir
+
 build CMakeFiles/PA1_Public.dir/lex.cpp.obj: CXX_COMPILER__PA1_Public_Debug C$:/Users/joshq/CLionProjects/PA1_Public/lex.cpp || cmake_object_order_depends_target_PA1_Public
   DEP_FILE = CMakeFiles\PA1_Public.dir\lex.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\PA1_Public.dir
   OBJECT_FILE_DIR = CMakeFiles\PA1_Public.dir
 
-build CMakeFiles/PA1_Public.dir/parse.cpp.obj: CXX_COMPILER__PA1_Public_Debug C$:/Users/joshq/CLionProjects/PA1_Public/parse.cpp || cmake_object_order_depends_target_PA1_Public
-  DEP_FILE = CMakeFiles\PA1_Public.dir\parse.cpp.obj.d
+build CMakeFiles/PA1_Public.dir/val.cpp.obj: CXX_COMPILER__PA1_Public_Debug C$:/Users/joshq/CLionProjects/PA1_Public/val.cpp || cmake_object_order_depends_target_PA1_Public
+  DEP_FILE = CMakeFiles\PA1_Public.dir\val.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\PA1_Public.dir
   OBJECT_FILE_DIR = CMakeFiles\PA1_Public.dir
 
-build CMakeFiles/PA1_Public.dir/prog2.cpp.obj: CXX_COMPILER__PA1_Public_Debug C$:/Users/joshq/CLionProjects/PA1_Public/prog2.cpp || cmake_object_order_depends_target_PA1_Public
-  DEP_FILE = CMakeFiles\PA1_Public.dir\prog2.cpp.obj.d
+build CMakeFiles/PA1_Public.dir/parseInt.cpp.obj: CXX_COMPILER__PA1_Public_Debug C$:/Users/joshq/CLionProjects/PA1_Public/parseInt.cpp || cmake_object_order_depends_target_PA1_Public
+  DEP_FILE = CMakeFiles\PA1_Public.dir\parseInt.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\PA1_Public.dir
   OBJECT_FILE_DIR = CMakeFiles\PA1_Public.dir
@@ -75,7 +81,7 @@ build CMakeFiles/PA1_Public.dir/prog2.cpp.obj: CXX_COMPILER__PA1_Public_Debug C$
 #############################################
 # Link the executable PA1_Public.exe
 
-build PA1_Public.exe: CXX_EXECUTABLE_LINKER__PA1_Public_Debug CMakeFiles/PA1_Public.dir/lex.cpp.obj CMakeFiles/PA1_Public.dir/parse.cpp.obj CMakeFiles/PA1_Public.dir/prog2.cpp.obj
+build PA1_Public.exe: CXX_EXECUTABLE_LINKER__PA1_Public_Debug CMakeFiles/PA1_Public.dir/main.cpp.obj CMakeFiles/PA1_Public.dir/lex.cpp.obj CMakeFiles/PA1_Public.dir/val.cpp.obj CMakeFiles/PA1_Public.dir/parseInt.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PA1_Public.dir
