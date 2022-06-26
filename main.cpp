@@ -1,19 +1,20 @@
-/*
+/* Programming Assignment 3
+ *
  * main.cpp
  *
  * CS280 - Spring 2022
- * parser testing program
+ * parser and interpreter testing program
  */
+
 #include <iostream>
 #include <fstream>
 
 #include "lex.h"
-#include "parse.h"
-//#include "parse.cpp"
+#include "val.h"
+#include "parseInt.h"
+
 
 using namespace std;
-
-//extern int error_count;
 
 
 int main(int argc, char *argv[])
@@ -44,21 +45,15 @@ int main(int argc, char *argv[])
             in = &file;
         }
     }
-    if(argc == 1)
-    {
-        cerr << "Missing File Name." << endl;
-        return 0;
-    }
-    //cout << "before entering parser" << endl;
+
     bool status = Prog(*in, lineNumber);
-    //cout << "returned from parser" << endl;
-    if( !status )
-    {
-        cout << "Unsuccessful Parsing" << endl << "Number of Syntax Errors " << ErrCount() << endl;
+
+    if( !status ){
+        cout << "\nUnsuccessful Interpretation" << endl << "Number of Errors " << ErrCount()  << endl;
     }
-    else
-    {
-        cout << "Successful Parsing" << endl;
+    else{
+        cout << endl;
+        cout << "Successful Execution" << endl;
     }
-    return 0;
+
 }
